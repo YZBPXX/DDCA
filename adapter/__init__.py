@@ -1,5 +1,5 @@
-from .adapter import DDCAAdapter
+from .adapter import DDCA
 
 __all__ = [
-    "DDCAAdapter"
+    "DDCA"
 ]

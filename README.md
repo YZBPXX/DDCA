@@ -1,5 +1,4 @@
-# ___Faster And More Efficient Subject Image Generation for Text-to-Image
-Diffusion Models___
+# ___Faster And More Efficient Subject Image Generation for Text-to-Image Diffusion Models___
 
 <a href='https://huggingface.co/YZBPXX/CCDA'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
 

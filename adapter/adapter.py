@@ -296,7 +296,7 @@ from .resampler import Resampler
 #
 #        return images
 
-class DDCA(torch.nn.Module):
+class DDCA():
     """SDXL"""
 
     def __init__(self, 
@@ -350,6 +350,7 @@ class DDCA(torch.nn.Module):
         unet = self.pipe.unet
         attn_procs = {}
         for name in unet.attn_processors.keys():
+            #print(name)
             cross_attention_dim = None if name.endswith("attn1.processor") else unet.config.cross_attention_dim
             if name.startswith("mid_block"):
                 hidden_size = unet.config.block_out_channels[-1]
@@ -359,16 +360,23 @@ class DDCA(torch.nn.Module):
             elif name.startswith("down_blocks"):
                 block_id = int(name[len("down_blocks.")])
                 hidden_size = unet.config.block_out_channels[block_id]
-            if cross_attention_dim is None:
+
+            #if cross_attention_dim is None or name.startswith("down_blocks.2"):
+            if cross_attention_dim is None or "1.attentions" in name:
                 attn_procs[name] = AttnProcessor()
             else:
                 attn_procs[name] = DDCAAttnProcessor(
                     hidden_size=hidden_size,
                     cross_attention_dim=cross_attention_dim,
-                    scale=1.0,
+                    scale=self.scale,
                     num_tokens=self.num_tokens,
-                ).to(self.device, dtype=torch.float16)
+                    opt = self.opt
+                ).to(self.device, dtype=self.dtype)
         unet.set_attn_processor(attn_procs)
+    def set_scale(self, scale):
+        for attn_processor in self.pipe.unet.attn_processors.values():
+            if isinstance(attn_processor, DDCAAttnProcessor):
+                attn_processor.scale = scale
 
     def load_ip_adapter(self):
 
