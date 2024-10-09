@@ -4,10 +4,10 @@ import logging
 import time
 from transformers import CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection, CLIPTextModelWithProjection
 import torch
-
+from diffusers import AutoencoderKL, DDPMScheduler, UNet2DConditionModel
 from ip_adapter.ip_adapter import Resampler
 
-from ip_adapter.attention_processor import DDCAAttnProcessor 
+from ip_adapter.attention_processor import DDCAAttnProcessor, AttnProcessor2_0 as AttnProcessor
 
 
 def init_trainer(args):
@@ -44,7 +44,7 @@ def init_trainer(args):
             #project_config=accelerator_project_config,
         )
         accelerator.init_trackers(
-            project_name="test",
+            project_name="DDCA2",
             init_kwargs={"wandb": {"name": args.run_name}}
         )
     
@@ -98,7 +98,8 @@ def init_adapter(unet, num_tokens):
             block_id = int(name[len("down_blocks.")])
             hidden_size = unet.config.block_out_channels[block_id]
 
-        if cross_attention_dim is None or "1.attentions" in name:
+        #if cross_attention_dim is None or "1.attentions" in name:
+        if cross_attention_dim is None:
             attn_procs[name] = AttnProcessor()
         else:
             layer_name = name.split(".processor")[0]

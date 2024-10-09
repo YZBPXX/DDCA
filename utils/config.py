@@ -9,7 +9,7 @@ def parse_args():
         help="Path to pretrained model or model identifier from huggingface.co/models.",
     )
     parser.add_argument(
-        "--pretrained_adapter_path",
+        "--pretrained_ip_adapter_path",
         type=str,
         default=None,
         help="Path to pretrained ip adapter model. If not specified weights are initialized randomly.",
@@ -23,7 +23,7 @@ def parse_args():
     parser.add_argument(
         "--output_dir",
         type=str,
-        default="checkpoints",
+        default="/hy-tmp/models/my-ipadapter/",
         help="The output directory where the model predictions and checkpoints will be written.",
     )
     parser.add_argument(

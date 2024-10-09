@@ -12,10 +12,10 @@ import pandas as pd
 import logging  # 引入logging模块
 import os.path
 import time
-from insightface.app import FaceAnalysis
-
-app = FaceAnalysis(name="buffalo_l", providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
-app.prepare(ctx_id=0, det_size=(640, 640))
+#from insightface.app import FaceAnalysis
+#
+#app = FaceAnalysis(name="buffalo_l", providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
+#app.prepare(ctx_id=0, det_size=(640, 640))
 
 logger = logging.getLogger()
 
@@ -31,7 +31,7 @@ class xlDataset(torch.utils.data.Dataset):
         self.i_drop_rate = i_drop_rate
         self.t_drop_rate = t_drop_rate
         self.ti_drop_rate = ti_drop_rate
-        data = pd.read_csv("")
+        data = pd.read_csv("/hy-tmp/datasts/data.csv")
         self.image_paths = data["image_path"].to_list()
         self.prompts = data["prompt"].to_list()
 
@@ -66,25 +66,28 @@ class xlDataset(torch.utils.data.Dataset):
         
     def __getitem__(self, idx):
         #image_path = self.data["image_path"][idx]
-        image_path = self.image_paths[idx]
+        image_path = "/hy-tmp/datasts/" + self.image_paths[idx]
         text = self.prompts[idx]
+        ip_image_path = image_path.replace("images", "process_images")
         
         image = Image.open(image_path).convert("RGB")
+        ip_image = Image.open(ip_image_path).convert("RGB")
         drop_image_embed = 0
 
-        bboxes, _ = app.det_model.detect(np.array(image)[:,:,::-1], max_num=0, metric='default')
-        box = list(map(int, bboxes[0][:-1]))
-        face = image.crop(box)
-        face = self.padding(face)
-        angle = random.randint(-45, 45)
-        face = face.rotate(angle)
+        #bboxes, _ = app.det_model.detect(np.array(image)[:,:,::-1], max_num=0, metric='default')
+        #box = list(map(int, bboxes[0][:-1]))
+        #face = image.crop(box)
+        #face = self.padding(face)
+        #angle = random.randint(-45, 45)
+        #face = face.rotate(angle)
 
         # original size
         original_width, original_height = image.size
         original_size = torch.tensor([original_height, original_width])
         
 
-        clip_image = self.clip_image_processor(images=face, return_tensors="pt").pixel_values
+        #clip_image = self.clip_image_processor(images=face, return_tensors="pt").pixel_values
+        clip_image = self.clip_image_processor(images=ip_image, return_tensors="pt").pixel_values
 
         rand_num = random.random()
         if rand_num < self.i_drop_rate:

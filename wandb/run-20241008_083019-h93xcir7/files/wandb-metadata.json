@@ -1,0 +1,54 @@
+{
+  "os":  "Linux-5.4.0-147-generic-x86_64-with-glibc2.17",
+  "python":  "3.8.10",
+  "startedAt":  "2024-10-08T08:30:19.702440Z",
+  "args":  [
+    "--learning_rate=1e-4",
+    "--pretrained_ip_adapter_path=/hy-tmp/models/IP-Adapter/sdxl_models/ip-adapter-plus_sdxl_vit-h.bin",
+    "--pretrained_model_name_or_path=/hy-tmp/models/stable-diffusion-xl-base-1.0",
+    "--image_encoder_path=/hy-tmp/models/IP-Adapter/models/image_encoder",
+    "--run_name=exp1",
+    "--num_tokens=16",
+    "--num_train_epochs=100000000",
+    "--train_batch_size=1",
+    "--eval_step=2000"
+  ],
+  "program":  "train.py",
+  "codePath":  "train.py",
+  "git":  {
+    "remote":  "https://github.com/YZBPXX/DDCA/",
+    "commit":  "0609a5f0bf5c04c6ca428a5a81b5699913aa21c7"
+  },
+  "email":  "yzbpxx@gmail.com",
+  "root":  "/root/project/DDCA",
+  "host":  "I1ce974284c02e01a60",
+  "username":  "root",
+  "executable":  "/usr/local/miniconda3/bin/python",
+  "codePathLocal":  "train.py",
+  "cpu_count":  52,
+  "cpu_count_logical":  104,
+  "gpu":  "[NVIDIA A100-PCIE-40GB]",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "32212254720",
+      "used":  "694022144"
+    }
+  },
+  "memory":  {
+    "total":  "540678283264"
+  },
+  "cpu":  {
+    "count":  52,
+    "countLogical":  104
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100-PCIE-40GB",
+      "memoryTotal":  "42949672960",
+      "cudaCores":  6912,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.0"
+}

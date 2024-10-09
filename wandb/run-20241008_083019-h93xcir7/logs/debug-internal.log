@@ -1,0 +1,90 @@
+{"time":"2024-10-08T08:30:19.707431749Z","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-10-08T08:30:19.707468608Z","level":"INFO","msg":"created symlink","path":"/root/project/DDCA/wandb/run-20241008_083019-h93xcir7/logs/debug-core.log"}
+{"time":"2024-10-08T08:30:21.710858681Z","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-08T08:30:21.727203551Z","level":"INFO","msg":"created new stream","id":"h93xcir7"}
+{"time":"2024-10-08T08:30:21.727289512Z","level":"INFO","msg":"stream: started","id":"h93xcir7"}
+{"time":"2024-10-08T08:30:21.727351005Z","level":"INFO","msg":"handler: started","stream_id":{"value":"h93xcir7"}}
+{"time":"2024-10-08T08:30:21.727381187Z","level":"INFO","msg":"sender: started","stream_id":{"value":"h93xcir7"}}
+{"time":"2024-10-08T08:30:21.727438548Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"h93xcir7"}}
+{"time":"2024-10-08T08:30:22.754833891Z","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-08T08:30:22.756289858Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-08T08:43:52.971068121Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-08T08:44:27.010589681Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": read tcp 172.17.0.6:55014->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T09:07:51.678403969Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": read tcp 172.17.0.6:58240->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T09:38:53.331633009Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-08T09:39:25.707656845Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T12:02:57.899615516Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:03:15.261477863Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:03:31.966000473Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:03:53.825491142Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-08T12:04:26.100224085Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T12:04:55.067343719Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:05:00.383975452Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-08T12:05:07.925593518Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:05:39.246946263Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T12:05:55.296645482Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:06:08.378893764Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:06:23.725510828Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:06:26.134703037Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T12:06:43.139738123Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:07:11.019732861Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T12:07:35.67206615Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T13:56:54.616699485Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T13:57:26.855661475Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T14:02:27.509655613Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": unexpected EOF"}
+{"time":"2024-10-08T14:03:33.249293912Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": unexpected EOF"}
+{"time":"2024-10-08T17:25:25.852955279Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:44518->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T17:25:40.804064654Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:44498->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T17:26:10.819600263Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:59444->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T17:26:25.795688279Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:44642->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T17:29:25.855888791Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:36008->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T17:29:40.810627542Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:36646->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T17:31:10.849837729Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:56070->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T17:33:29.06595376Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": read tcp 172.17.0.6:33748->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T17:36:55.856931972Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:39554->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T17:41:25.906488934Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:59788->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T18:11:22.887681347Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:11:52.748013983Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:12:05.545808197Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:12:10.825076945Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T18:12:22.784308807Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:12:43.002489872Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T18:13:17.035872453Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T18:13:22.770727785Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:13:35.263214751Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:13:52.813554382Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:13:56.694478764Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-08T18:14:22.764861402Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:14:35.367554624Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:14:46.46403275Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-08T18:14:49.94220131Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:15:09.131464293Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:15:36.761494286Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:15:49.219912776Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:15:55.632831576Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-08T18:16:04.534778467Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:16:24.577029141Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:17:25.63419318Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-08T18:17:52.405300995Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:18:52.378716146Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:18:55.635150269Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T18:19:05.494619002Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:19:52.336510878Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": EOF"}
+{"time":"2024-10-08T18:20:25.63628641Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-10-08T19:15:57.374478456Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream"}
+{"time":"2024-10-08T19:51:12.235194391Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-10-08T19:51:16.960540118Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream"}
+{"time":"2024-10-08T20:10:22.73004865Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream\": read tcp 172.17.0.6:48200->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T20:10:27.529784669Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:57344->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-08T23:15:22.539325456Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/yzb/DDCA2/h93xcir7/file_stream"}
+{"time":"2024-10-08T23:21:07.601698208Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/graphql"}
+{"time":"2024-10-09T03:29:00.170396978Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.17.0.6:51498->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-10-09T07:49:00.024783268Z","level":"INFO","msg":"stream: closing","id":"h93xcir7"}
+{"time":"2024-10-09T07:49:00.024837323Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-09T07:49:00.029785438Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-09T07:49:05.029568801Z","level":"ERROR","msg":"monitor: gpu: timeout waiting for process to exit"}
+{"time":"2024-10-09T07:49:05.119079725Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-10-09T07:49:06.038668406Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"h93xcir7"}}
+{"time":"2024-10-09T07:49:06.038761765Z","level":"INFO","msg":"sender: closed","stream_id":{"value":"h93xcir7"}}
+{"time":"2024-10-09T07:49:06.038759264Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"h93xcir7"}}
+{"time":"2024-10-09T07:49:06.039031517Z","level":"INFO","msg":"stream: closed","id":"h93xcir7"}
