@@ -15,13 +15,13 @@ class clipTextImageScore():
 
     def __init__(self, device, model_path="openai/clip-vit-base-patch32"):
         self.model = CLIPModel.from_pretrained(model_path).to(device)
-        self.processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+        self.processor = CLIPProcessor.from_pretrained(model_path)
 
     def __call__(self, texts, image_paths):
         score = 0
         for text, image_path in zip(texts, image_paths):
             image = Image.open(image_path)
-            input_ids = self.processor(text, padding="max_length", truncation=True, return_tensors="pt").to(self.model.device)
+            input_ids = self.processor(text, max_length=77, padding="max_length", truncation=True, return_tensors="pt").to(self.model.device)
             pixel_values = self.processor(images=image, return_tensors="pt").to(self.model.device)
             text_embeds = self.model.get_text_features(**input_ids)
             image_embeds = self.model.get_image_features(**pixel_values)
