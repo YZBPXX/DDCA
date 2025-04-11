@@ -1,5 +1,6 @@
-from .ip_adapter import DDCA
+from .ip_adapter import DDCA, IPAdapterPlusXL
 
 __all__ = [
-    "DDCA"
+    "DDCA",
+    "IPAdapterPlusXL",
 ]

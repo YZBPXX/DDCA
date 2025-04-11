@@ -55,10 +55,10 @@ def init_trainer(args):
 
 def init_model(pretrained_model_name_or_path, image_encoder_path, num_tokens, dtype=torch.float32):
     # Load scheduler, tokenizer and models.
-    noise_scheduler = DDPMScheduler.from_pretrained(pretrained_model_name_or_path, subfolder="scheduler")
-    tokenizer = CLIPTokenizer.from_pretrained(pretrained_model_name_or_path, subfolder="tokenizer")
+    #noise_scheduler = DDPMScheduler.from_pretrained(pretrained_model_name_or_path, subfolder="scheduler")
+    #tokenizer = CLIPTokenizer.from_pretrained(pretrained_model_name_or_path, subfolder="tokenizer")
     text_encoder = CLIPTextModel.from_pretrained(pretrained_model_name_or_path, subfolder="text_encoder")
-    tokenizer_2 = CLIPTokenizer.from_pretrained(pretrained_model_name_or_path, subfolder="tokenizer_2")
+    #tokenizer_2 = CLIPTokenizer.from_pretrained(pretrained_model_name_or_path, subfolder="tokenizer_2")
     text_encoder_2 = CLIPTextModelWithProjection.from_pretrained(pretrained_model_name_or_path, subfolder="text_encoder_2")
     vae = AutoencoderKL.from_pretrained(pretrained_model_name_or_path, subfolder="vae")
     unet = UNet2DConditionModel.from_pretrained(pretrained_model_name_or_path, subfolder="unet")
@@ -77,7 +77,8 @@ def init_model(pretrained_model_name_or_path, image_encoder_path, num_tokens, dt
         ff_mult=4,
     )
 
-    return noise_scheduler,tokenizer,tokenizer_2, text_encoder, text_encoder_2,vae,unet, image_encoder, image_proj_model
+    #return noise_scheduler,tokenizer,tokenizer_2, text_encoder, text_encoder_2,vae,unet, image_encoder, image_proj_model
+    return text_encoder, text_encoder_2,vae,unet, image_encoder, image_proj_model
 
 # init adapter modules
 def init_adapter(unet, num_tokens):

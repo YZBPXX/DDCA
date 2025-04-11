@@ -5,19 +5,19 @@ def parse_args():
     parser.add_argument(
         "--pretrained_model_name_or_path",
         type=str,
-        default="stabilityai/stable-diffusion-xl-refiner-1.0",
+        default="/media2/user/data/models/stable-diffusion-xl-base-1.0",
         help="Path to pretrained model or model identifier from huggingface.co/models.",
     )
     parser.add_argument(
         "--pretrained_ip_adapter_path",
         type=str,
-        default=None,
+        default="/media2/user/data/models/IP-Adapter/sdxl_models/ip-adapter-plus_sdxl_vit-h.bin",
         help="Path to pretrained ip adapter model. If not specified weights are initialized randomly.",
     )
     parser.add_argument(
         "--image_encoder_path",
         type=str,
-        default='openai/clip-vit-base-patch32',
+        default='/media2/user/data/models/IP-Adapter/models/image_encoder',
         help="Path to CLIP image encoder",
     )
     parser.add_argument(

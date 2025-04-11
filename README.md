@@ -1,14 +1,13 @@
 # ___Faster And More Efficient Subject Image Generation for Text-to-Image Diffusion Models___
 
-<a href='https://huggingface.co/YZBPXX/CCDA'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
-
+<a href='https://huggingface.co/YZBPXX/CCDA'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a> 
 ---
 
 
 ## Introduction
 
  we present **Faster And More Efficient Subject Image Generation for Text-to-Image Diffusion Models**, we introduce a new topic-customized method that requires no repeated training. It trains a plugand-play image prompt adapter with only 417M parameters, lightweight yet powerful, surpassing existing models in both text and image consistency.
-
+The DDCA inference code requires high memory consumption for visualizing the attention map and copy pipe, necessitating a V100. Removing these allows it to run inference on a 3090.
 
 ![arch](readme_images/structure.jpeg)
 
